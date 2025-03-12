@@ -1,6 +1,5 @@
 /* TODO - find colour to match background of body */
 
-
 :root {
   --purple-100: hsl(254, 88%, 90%);
   --purple-500: hsl(256, 67%, 59%);
@@ -30,10 +29,9 @@ body {
 .main-container {
   max-width: 375px;
   background-color: var(--yellow-100);
-  height: 100%;
   margin: 0 auto;
   display: grid;
-  grid-template-rows: 15rem 9rem 12rem;
+  grid-template-rows: 15rem 9rem 12rem 25rem 21rem 12rem 1fr 1fr;
   gap: 30px;
   padding: 20px;
 }
@@ -59,7 +57,6 @@ body {
 
   & .five-star-review {
     width: 65%;
-
   }
 
   & .item-1-subtext {
@@ -82,9 +79,9 @@ body {
 
   & .item-2-text {
     line-height: 95%;
-    margin: .3rem 0;
+    margin: 0.3rem 0;
     font-size: 1.4rem;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: -2px;
   }
 }
@@ -93,7 +90,7 @@ body {
   width: 100%;
   background-color: var(--yellow-500);
   border-radius: var(--border-radius);
-  padding: 15px 20px  0 20px;
+  padding: 15px 20px 0 20px;
   overflow: hidden;
 
   & .item-3-text {
@@ -101,11 +98,79 @@ body {
     line-height: 95%;
     font-size: 1.5rem;
     letter-spacing: -2px;
-    font-weight: 500;
+    font-weight: 600;
   }
 
   & .item-3-image {
     width: 70%;
     margin-top: 15px;
+  }
+}
+
+.item-4 {
+  width: 100%;
+  background-color: var(--purple-100);
+  border-radius: var(--border-radius);
+  padding: 15px 20px 0 20px;
+  text-align: center;
+
+  & .item-4-text {
+    font-size: 1.5rem;
+    letter-spacing: -2px;
+    font-weight: 600;
+    margin: 10px 0 20px 0;
+  }
+
+  & .item-4-image {
+    width: 100%;
+  }
+
+  & .item-4-subtext {
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 20px 0 0 0;
+    line-height: 95%;
+  }
+}
+
+.item-5 {
+  width: 100%;
+  background-color: var(--purple-500);
+  border-radius: var(--border-radius);
+  padding: 30px 20px 0 20px;
+  text-align: center;
+
+  & .item-5-image {
+    width: 75%;
+  }
+
+  & .item-5-text {
+    color: var(--white);
+    font-size: 1.6rem;
+    margin: 40px 30px 30px 30px;
+    font-weight: 500;
+    line-height: 90%;
+  }
+}
+
+.item-6 {
+  width: 100%;
+  background-color: var(--white);
+  border-radius: var(--border-radius);
+  padding: 20px 20px 0 20px;
+
+  & .item-6-text {
+    margin: 0;
+    font-size: 2.2rem;
+    font-weight: 500;
+  }
+
+  & .item-6-subtext {
+    margin: 0 0 20px 0;
+    font-weight: 400;
+  }
+
+  & .item-6-image {
+    width: 60%;
   }
 }
