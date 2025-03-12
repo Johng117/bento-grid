@@ -33,7 +33,7 @@ body {
   height: 100%;
   margin: 0 auto;
   display: grid;
-  grid-template-rows: 15rem 9rem 1fr;
+  grid-template-rows: 15rem 9rem 12rem;
   gap: 30px;
   padding: 20px;
 }
@@ -73,6 +73,7 @@ body {
   background-color: var(--white);
   border-radius: var(--border-radius);
   padding: 20px;
+  width: 100%;
 
   & .item-2-image {
     width: 100%;
@@ -85,5 +86,26 @@ body {
     font-size: 1.4rem;
     font-weight: 500;
     letter-spacing: -2px;
+  }
+}
+
+.item-3 {
+  width: 100%;
+  background-color: var(--yellow-500);
+  border-radius: var(--border-radius);
+  padding: 15px 20px  0 20px;
+  overflow: hidden;
+
+  & .item-3-text {
+    margin: 0;
+    line-height: 95%;
+    font-size: 1.5rem;
+    letter-spacing: -2px;
+    font-weight: 500;
+  }
+
+  & .item-3-image {
+    width: 70%;
+    margin-top: 15px;
   }
 }
