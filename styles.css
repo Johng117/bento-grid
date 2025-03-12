@@ -28,10 +28,10 @@ body {
 
 .main-container {
   max-width: 375px;
-  background-color: var(--yellow-100);
+  background-color: #f8f8ff;
   margin: 0 auto;
   display: grid;
-  grid-template-rows: 15rem 9rem 12rem 25rem 21rem 12rem 1fr 1fr;
+  grid-template-rows: 15rem 9rem 12rem 25rem 21rem 12rem 12rem 20rem;
   gap: 30px;
   padding: 20px;
 }
@@ -166,11 +166,53 @@ body {
   }
 
   & .item-6-subtext {
-    margin: 0 0 20px 0;
+    margin: 8px 0 20px 0;
     font-weight: 400;
   }
 
   & .item-6-image {
     width: 60%;
+  }
+}
+
+.item-7 {
+  width: 100%;
+  background-color: var(--yellow-100);
+  border-radius: var(--border-radius);
+  padding: 20px 20px 0 30px;
+
+  & .item-7-text {
+    margin: 0 0 20px 0;
+    font-size: 1.8rem;
+    letter-spacing: -2px;
+    font-weight: 600;
+    line-height: 95%;
+  }
+
+  & .item-7-text-italic {
+    color: var(--purple-500)
+  }
+
+  & .item-7-image {
+    width: 60%;
+  }
+}
+
+.item-8 {
+  width: 100%;
+  background-color: var(--yellow-500);
+  border-radius: var(--border-radius);
+  padding: 20px 20px 0 20px;
+
+  & .item-8-text {
+    margin: 10px 0 20px 0;
+    font-size: 1.8rem;
+    letter-spacing: -2px;
+    font-weight: 600;
+    line-height: 97%;
+  }
+
+  & .item-8-image {
+    width: 75%;
   }
 }
