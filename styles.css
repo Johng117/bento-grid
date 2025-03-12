@@ -1,3 +1,6 @@
+/* TODO - find colour to match background of body */
+
+
 :root {
   --purple-100: hsl(254, 88%, 90%);
   --purple-500: hsl(256, 67%, 59%);
@@ -30,28 +33,57 @@ body {
   height: 100%;
   margin: 0 auto;
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 20px;
-}
-
-.social-item-1 {
-  width: 90%;
-  background-color: var(--purple-500);
-  height: 15rem;
-  border-radius: var(--border-radius);
-  margin: 20px auto;
-  color: var(--white);
+  grid-template-rows: 15rem 9rem 1fr;
+  gap: 30px;
   padding: 20px;
 }
 
-.item-1-main-text {
-    margin: 0;
-    text-align: center;
+.item-1 {
+  width: 100%;
+  background-color: var(--purple-500);
+  border-radius: var(--border-radius);
+  color: var(--white);
+  padding: 20px;
+  text-align: center;
+
+  & .item-1-main-text {
+    margin: 1rem 0 1.2rem 0;
     font-size: 2.5rem;
     font-weight: 500;
     line-height: 90%;
+  }
+
+  & .item-1-yellow-text {
+    color: var(--yellow-500);
+  }
+
+  & .five-star-review {
+    width: 65%;
+
+  }
+
+  & .item-1-subtext {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0;
+  }
 }
 
-.item-1-yellow-text {
-    color: var(--yellow-500);
+.item-2 {
+  background-color: var(--white);
+  border-radius: var(--border-radius);
+  padding: 20px;
+
+  & .item-2-image {
+    width: 100%;
+    background: var(--white);
+  }
+
+  & .item-2-text {
+    line-height: 95%;
+    margin: .3rem 0;
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: -2px;
+  }
 }
